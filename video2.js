@@ -54,3 +54,21 @@ video.addEventListener("timeupdate", () => {
         showWA();
     }
 });
+
+const waButton = document.getElementById("waButton");
+
+// nomor WA kamu (format Indonesia)
+const nomorWA = "6287710591220";
+
+// pesan otomatis yang sudah kamu minta
+const pesanWA = "aku udah liat semuanya, aku mau cerita";
+
+// bikin link aman (anti error emoji / browser)
+const linkWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesanWA)}`;
+
+waButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // buka WA di tab baru (lebih kompatibel HP + GitHub Pages)
+    window.open(linkWA, "_blank");
+});

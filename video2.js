@@ -61,7 +61,7 @@ const waButton = document.getElementById("waButton");
 const nomorWA = "6287710591220";
 
 // pesan otomatis yang sudah kamu minta
-const pesanWA = "aku udah liat semuanya, aku mau cerita";
+const pesanWA = "sayanggg boleee ceritaaa ke kikyy semuaa nyaa ehee👉🏻👈🏻";
 
 // bikin link aman (anti error emoji / browser)
 const linkWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesanWA)}`;
